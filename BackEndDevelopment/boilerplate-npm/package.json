@@ -1,0 +1,24 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "Rafael Perdigão Melo Castro",
+	"description": "This is a awesome node.js project, made with freeCodeCamp awesome team and it's a start for my fullstack developer career! =)",
+	"keywords": [
+		"freecodecamp",
+		"isMyWayUpToA",
+		"FullStack",
+		"Career"
+	],
+	"license": "FCC",
+	"version": "0.1.3",
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rafaelPermec/freeCodeCamp-portfolio"
+	}
+}
