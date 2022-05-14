@@ -4,12 +4,15 @@ let app = express();
 
 //const helloWorld = () => console.log('Hello World');
 //helloWorld();
-const absolutePath = __dirname + '/views/index.html';
+const absolutePath1 = __dirname + '/views/index.html';
   
 app.get('/', (req, res) => {
-  res.sendFile(absolutePath);
+  res.sendFile(absolutePath1);
 });
 
+const absolutePath2 = __dirname + '/public';
+
+app.use('/public', express.static(absolutePath2));
 
 
 
