@@ -7,12 +7,16 @@ app.get('/', (_req, res) => {
   res.sendFile(absolutePath1);
 });
 
+
+app.get('/json', (_req, res) => {
+let mySecret = process.env['MESSAGE_STYLE'];
+  mySecret === 'uppercase' ? 
+    res.json({ "message": "HELLO JSON" }):
+    res.json({ "message": "Hello json" })
+});
+
 const absolutePath2 = __dirname + '/public';
 
 app.use('/public', express.static(absolutePath2));
-
-app.get('/json', (_req, res) => {
-  res.json({ "message": "Hello json" })
-});
 
  module.exports = app;
